@@ -1,10 +1,19 @@
+import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from "react-router-dom";
 
 import logo from '../images/logo.png';
 import menu from '../images/menu.svg';
 
+import PopupMenu from './PopupMenu';
+
 const Navbar = ({ navlinks }) => {
+    const [popupMenu, setPopupMenu] = useState(false);
+
+    const onTogglePopup = () => {
+        setPopupMenu(!popupMenu);
+    }
+
     return (
         <>
             <header className='flex items-center justify-center w-auto h-auto absolute top-7 left-0 right-0'>
@@ -31,13 +40,15 @@ const Navbar = ({ navlinks }) => {
                     <ul className='hidden lg:flex items-center'>
                         <li>
                             <button type='button' className='flex items-center justify-center transition-all 
-                            duration-200 active:scale-90'>
+                            duration-200 active:scale-90 cursor-pointer' onClick={onTogglePopup}>
                                 <img src={menu} alt="menu toggler" className='object-cover shadow-sm filter' />
                             </button>
                         </li>
                     </ul>
                 </nav>
             </header>
+
+            <PopupMenu navlinks={navlinks} popupMenu={popupMenu} />
         </>
     );
 };

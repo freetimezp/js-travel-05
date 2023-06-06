@@ -36,7 +36,7 @@
 }
 
 .button-light {
-  @apply bg-gradient-to-b from-white to-slate-100 shadow-lg shadow-slate-100 
+  @apply bg-gradient-to-b from-white to-slate-100 shadow-lg 
   rounded-full text-lg sm:text-sm px-9 py-1.5 transition-all duration-200 active:scale-90
   text-black sm:w-48
 }
@@ -45,7 +45,17 @@
   filter: drop-shadow(0.1rem 0.1rem 1rem rgba(74 222 128 / 80%));
 }
 
+.showpopup {
+  opacity: 1;
+  visibility: visible;
+  transform: skewY(0deg) translateY(30px);
+}
 
+.noshowpopup {
+  opacity: 0;
+  visibility: hidden;
+  transform: skewY(3deg) translateY(-30px);
+}
 
 
 

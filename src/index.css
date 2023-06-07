@@ -11,6 +11,10 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+}
+
 ::-webkit-scrollbar {
   width: 0.6rem;
 }

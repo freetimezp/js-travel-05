@@ -68,8 +68,8 @@ export const memory = {
 };
 
 export const placesAPI = [
-    { "placeImg": place1, "location": "Lahore", "distance": "3.0 hour dirve" },
-    { "placeImg": place2, "location": "Faisalabad", "distance": "2.5 hour dirve" },
+    { "placeImg": place1, "location": "Lahore", "distance": "3.0 hour drive" },
+    { "placeImg": place2, "location": "Faisalabad", "distance": "2.5 hour drive" },
     { "placeImg": place3, "location": "Multan", "distance": "4.7 hour drive" },
     { "placeImg": place4, "location": "Rawalpindi", "distance": "4 hour drive" },
     { "placeImg": place5, "location": "Islamabad", "distance": "4.9 hour drive" },

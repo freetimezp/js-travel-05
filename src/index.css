@@ -40,7 +40,7 @@
 }
 
 .button-light {
-  @apply bg-gradient-to-b from-white to-slate-100 shadow-lg 
+  @apply bg-gradient-to-b from-white to-slate-100 shadow-lg shadow-slate-400
   rounded-full text-lg sm:text-sm px-9 py-1.5 transition-all duration-200 active:scale-90
   text-black sm:w-48
 }

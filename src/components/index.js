@@ -6,4 +6,5 @@ export { default as Advertise } from './Advertise.jsx';
 export { default as Pricings } from './Pricings.jsx';
 export { default as PriceCard } from './PriceCard.jsx';
 export { default as Banner } from './Banner.jsx';
+export { default as Newsletter } from './Newsletter.jsx';
 export { default as Footer } from './Footer.jsx';

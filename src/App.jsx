@@ -1,5 +1,5 @@
-import { Navbar, Hero, Memory, Explore, Advertise, Pricings, Footer } from './components';
-import { hero, navlinks, memory, placesAPI, brands, pricingapi } from './data/travigodata';
+import { Navbar, Hero, Memory, Explore, Advertise, Pricings, Banner, Footer } from './components';
+import { hero, navlinks, memory, placesAPI, brands, pricingapi, bannerAPI } from './data/travigodata';
 
 const App = () => {
   return (
@@ -10,6 +10,7 @@ const App = () => {
       <Explore placesAPI={placesAPI} title="Explore The Beauty Of The World" />
       <Advertise brands={brands} />
       <Pricings pricingapi={pricingapi} />
+      <Banner bannerAPI={bannerAPI} />
       <Footer />
     </>
   );

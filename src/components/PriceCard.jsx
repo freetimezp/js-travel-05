@@ -2,7 +2,8 @@ import PropTypes from 'prop-types';
 
 const PriceCard = ({ plan: { planicon, title, text, plantype, plancontent, buttonText } }) => {
    return (
-      <div className='p-5 rounded-lg bg-slate-50/5 ring-1 ring-slate-100 shadow-md shadow-slate-300'>
+      <div className='p-5 rounded-lg bg-slate-50/5 ring-1 ring-slate-100 shadow-md shadow-slate-300
+      hover:scale-105 transition-all duration-300'>
          <div className='flex items-center justify-between'>
             <div className='flex items-center gap-5'>
                <div className='grid items-center'>
@@ -35,7 +36,8 @@ const PriceCard = ({ plan: { planicon, title, text, plantype, plancontent, butto
                      <img src={item.iconbox} alt="icon" className='lg:w-5 lg:h-5' />
                   </div>
                   <div className='grid items-center'>
-                     <h1 className='font-normal text-lg text-gray-900 filter drop-shadow-lg lg:text-base'>
+                     <h1 className='font-normal text-lg text-gray-900 filter drop-shadow-lg lg:text-base
+                     hover:text-emerald-400 transition-all duration-300 cursor-pointer'>
                         {item.text}
                      </h1>
                   </div>

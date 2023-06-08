@@ -45,6 +45,17 @@
   text-black sm:w-48
 }
 
+.nav-default {
+  @apply flex items-center justify-center fixed top-8 lg:top-5 left-0 right-0 transition-all
+  duration-300
+}
+
+.nav-sticky {
+  @apply bg-emerald-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 flex
+  items-center h-[9vh] fixed top-0 left-0 right-0 opacity-100 z-[100] shadow-sm 
+  shadow-slate-100
+}
+
 .drop-shadow-emrald {
   filter: drop-shadow(0.1rem 0.1rem 1rem rgba(74 222 128 / 80%));
 }

@@ -14,7 +14,8 @@ const Footer = ({ footerAPI: { titles, links, sociallinks } }) => {
                 {links?.map((list, i) => (
                     <ul key={i} className='grid items-center justify-items-center gap-1'>
                         {list?.map((el, index) => (
-                            <li key={index} className='text-sm sm:text-xs cursor-pointer'>
+                            <li key={index} className='text-sm sm:text-xs cursor-pointer hover:tracking-widest
+                            transition-all duration-300'>
                                 {el.link}
                             </li>
                         ))}
